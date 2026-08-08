@@ -1,0 +1,2317 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>URBAN SYNAPSE — 어반시냅스 | AI 포용도시 마스터 에이전트 플랫폼</title>
+<meta name="description" content="어반시냅스(Urban Synapse)는 도시와 사람, 혁신기술을 연결하는 AI 포용도시 마스터 에이전트 플랫폼입니다. ASCA KOREA 에이전시, CARE 포용돌봄 플랫폼, AGE PRIDE 아카데미, Urban Innovation 4대 사업을 운영합니다." />
+<meta name="keywords" content="어반시냅스, Urban Synapse, 스마트시티, 포용도시, ASCA KOREA, CARE 포용돌봄, AGE PRIDE 아카데미, 리빙랩, AI 포용도시서비스" />
+<link rel="canonical" href="https://www.urbansynapse.kr/" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 36'><polygon points='16,2 30,10 30,26 16,34 2,26 2,10' stroke='url(%23hg)' stroke-width='2' fill='%23f7f5f0'/><ellipse cx='16' cy='19' rx='11' ry='4.2' stroke='url(%23pg)' stroke-width='2.2' fill='none' transform='rotate(-25 16 19)'/><ellipse cx='16' cy='19' rx='11' ry='4.2' stroke='url(%23by)' stroke-width='2.2' fill='none' transform='rotate(25 16 19)'/><ellipse cx='16' cy='19' rx='4.6' ry='11.5' stroke='url(%23om)' stroke-width='2.2' fill='none'/><circle cx='21.5' cy='10' r='1.5' fill='%23f2a30f'/><defs><linearGradient id='hg' x1='0' y1='0' x2='32' y2='36'><stop offset='0' stop-color='%23e6007e'/><stop offset='1' stop-color='%23ff8a3d'/></linearGradient><linearGradient id='pg' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%234c3aa0'/><stop offset='1' stop-color='%236dc24b'/></linearGradient><linearGradient id='by' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%231ba9e0'/><stop offset='1' stop-color='%23e8d61f'/></linearGradient><linearGradient id='om' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%23ff8a3d'/><stop offset='1' stop-color='%23d6007f'/></linearGradient></defs></svg>" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="URBAN SYNAPSE — 어반시냅스 | AI 포용도시 마스터 에이전트 플랫폼" />
+<meta property="og:description" content="도시·사람·기술의 따뜻한 연결을 통해 모든 세대를 위한 AI 포용도시서비스를 만들어갑니다." />
+<meta property="og:url" content="https://www.urbansynapse.kr/" />
+<meta property="og:locale" content="ko_KR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="URBAN SYNAPSE — 어반시냅스" />
+<meta name="twitter:description" content="도시와 사람, 혁신기술을 연결하는 AI 포용도시 마스터 에이전트 플랫폼." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0a1833;
+    --ink-soft: #2a3a5e;
+    --ink-muted: #6b7897;
+    --paper: #f7f5f0;
+    --paper-warm: #ede8dc;
+    --line: rgba(10, 24, 51, 0.12);
+    --blue: #1f57d8;
+    --blue-deep: #0a2a7a;
+    --cyan: #4dd0e1;
+    --accent: #ff6a1a;
+    --accent-soft: #ffb98a;
+    --grad: linear-gradient(135deg, #1f57d8 0%, #4dd0e1 60%, #a7e8f0 100%);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-weight: 400;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.6;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* Noise texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .display {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "SOFT" 100;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    line-height: 0.95;
+  }
+
+  .mono {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  /* ======== NAVIGATION ======== */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 22px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    mix-blend-mode: normal;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(0px);
+  }
+  nav.scrolled {
+    background: rgba(247, 245, 240, 0.85);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line);
+    padding: 16px 48px;
+  }
+  .logo-mark {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  .logo-hex {
+    width: 32px;
+    height: 36px;
+    position: relative;
+  }
+  nav ul {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+  }
+  nav ul a {
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    position: relative;
+    padding-bottom: 3px;
+  }
+  nav ul a::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 0; height: 1px;
+    background: var(--accent);
+    transition: width 0.3s ease;
+  }
+  nav ul a:hover::after { width: 100%; }
+  .nav-contact {
+    background: var(--ink);
+    color: var(--paper) !important;
+    padding: 10px 18px !important;
+    border-radius: 999px;
+    font-size: 12px !important;
+  }
+  .nav-contact::after { display: none; }
+
+  /* ======== HERO ======== */
+  .hero {
+    min-height: 100vh;
+    position: relative;
+    padding: 140px 48px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .hero-waves {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .hero-waves svg {
+    position: absolute;
+    right: -10%;
+    top: 0;
+    width: 110%;
+    height: 100%;
+    opacity: 0.85;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .hero-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 80px;
+    font-size: 11px;
+    color: var(--ink-muted);
+  }
+  .hero-meta .mono { color: var(--ink-soft); }
+  .hero-title {
+    font-size: clamp(72px, 13vw, 200px);
+    line-height: 0.88;
+    margin-bottom: 40px;
+  }
+  .hero-title .urban { color: var(--accent); font-style: italic; font-weight: 400; }
+  .hero-title .synapse { color: var(--ink); display: block; }
+  .hero-subtitle {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 80px;
+    margin-top: 60px;
+    align-items: end;
+  }
+  .hero-tagline {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(18px, 1.8vw, 26px);
+    color: var(--ink-soft);
+    line-height: 1.4;
+    max-width: 480px;
+  }
+  .hero-desc {
+    font-size: 15px;
+    color: var(--ink-soft);
+    line-height: 1.75;
+    max-width: 460px;
+    justify-self: end;
+  }
+  .hero-desc::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: var(--accent);
+    margin-bottom: 20px;
+  }
+
+  .hero-foot {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .scroll-cue {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--ink-muted);
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  .scroll-cue-line {
+    width: 40px; height: 1px;
+    background: var(--ink);
+    position: relative;
+    overflow: hidden;
+  }
+  .scroll-cue-line::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--accent);
+    animation: scrollLine 2.5s ease-in-out infinite;
+  }
+  @keyframes scrollLine {
+    0% { transform: translateX(-100%); }
+    50% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+  }
+
+  /* ======== SECTIONS ======== */
+  section {
+    position: relative;
+    z-index: 2;
+  }
+  .section-pad {
+    padding: 140px 48px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .section-number {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--accent);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    margin-bottom: 28px;
+  }
+  .section-number::before {
+    content: '';
+    width: 24px; height: 1px;
+    background: var(--accent);
+  }
+  .section-title {
+    font-size: clamp(42px, 6vw, 84px);
+    margin-bottom: 32px;
+  }
+  .section-lead {
+    font-size: 18px;
+    color: var(--ink-soft);
+    line-height: 1.75;
+    max-width: 680px;
+    margin-bottom: 60px;
+  }
+
+  /* ======== BRAND / 01 ======== */
+  .brand-section {
+    background: var(--paper);
+    border-top: 1px solid var(--line);
+  }
+  .brand-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 100px;
+    align-items: start;
+  }
+  .brand-visual {
+    position: sticky;
+    top: 120px;
+    aspect-ratio: 1;
+    background: linear-gradient(135deg, #0a2a7a 0%, #1f57d8 60%, #4dd0e1 100%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .brand-visual::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity: 0.15;
+    mix-blend-mode: overlay;
+  }
+  .brand-visual svg {
+    position: relative;
+    z-index: 2;
+    width: 60%;
+  }
+  .brand-pillars {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+  .pillar {
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--line);
+  }
+  .pillar:last-child { border-bottom: none; }
+  .pillar-label {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  .pillar h3 {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+  .pillar p {
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  /* ======== MOTTO / 02 ======== */
+  .motto-section {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 180px 48px;
+    position: relative;
+    overflow: hidden;
+  }
+  .motto-section .section-number { color: var(--cyan); }
+  .motto-section .section-number::before { background: var(--cyan); }
+  .motto-waves {
+    position: absolute;
+    inset: 0;
+    opacity: 0.25;
+    pointer-events: none;
+  }
+  .motto-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .motto-heading {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(36px, 5vw, 68px);
+    line-height: 1.1;
+    margin-bottom: 48px;
+    letter-spacing: -0.02em;
+    max-width: 1100px;
+  }
+  .motto-heading .hl {
+    color: var(--cyan);
+    font-style: italic;
+  }
+  .motto-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin-top: 80px;
+    padding-top: 60px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+  }
+  .motto-body p {
+    color: rgba(247, 245, 240, 0.75);
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  .motto-body p strong {
+    display: block;
+    color: var(--paper);
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 14px;
+    letter-spacing: -0.01em;
+  }
+
+  /* ======== TEAM ROLES GRID ======== */
+  .roles-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 64px;
+  }
+  .roles-grid .value-card {
+    padding: 32px 28px;
+  }
+  .roles-grid .value-card h4 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  .roles-grid .value-card ul li {
+    font-size: 13px;
+  }
+
+  /* ======== ROADMAP ======== */
+  .roadmap-section { background: var(--paper-warm); }
+  .roadmap-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin-top: 64px;
+  }
+  .roadmap-col { display: flex; flex-direction: column; gap: 12px; }
+  .roadmap-period {
+    color: #fff;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    padding: 14px 8px;
+    border-radius: 4px;
+    line-height: 1.5;
+  }
+  .roadmap-period span { display: block; font-size: 12px; font-weight: 400; opacity: 0.85; }
+  .roadmap-card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 20px 16px 20px 34px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    position: relative;
+    flex: 1;
+  }
+  .roadmap-dot {
+    position: absolute;
+    left: 14px; top: 22px;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+  }
+
+  /* ======== CORE VALUES / 03 ======== */
+  .values-section { background: var(--paper-warm); }
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 72px;
+  }
+  .value-card {
+    background: var(--paper);
+    padding: 48px 40px;
+    border-radius: 4px;
+    position: relative;
+    border: 1px solid var(--line);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  .value-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 60px -20px rgba(10, 24, 51, 0.15);
+  }
+  .value-num {
+    font-family: 'Fraunces', serif;
+    font-size: 72px;
+    font-weight: 300;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  .value-card h4 {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+  }
+  .value-card ul {
+    list-style: none;
+    color: var(--ink-soft);
+  }
+  .value-card ul li {
+    padding: 8px 0;
+    padding-left: 18px;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.7;
+    border-bottom: 1px dashed var(--line);
+  }
+  .value-card ul li:last-child { border-bottom: none; }
+  .value-card ul li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 16px;
+    width: 8px; height: 1px;
+    background: var(--accent);
+  }
+
+  /* ======== BUSINESS SECTORS / 04 ======== */
+  .sectors-section { background: var(--paper); }
+  .sector-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: end;
+    margin-bottom: 80px;
+  }
+  .sectors-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .sector-row {
+    display: grid;
+    grid-template-columns: 60px 1fr 2fr 180px;
+    gap: 32px;
+    padding: 40px 24px;
+    border-top: 1px solid var(--line);
+    align-items: center;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    position: relative;
+  }
+  .sector-row:last-child { border-bottom: 1px solid var(--line); }
+  .sector-row::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 0; height: 100%;
+    background: linear-gradient(90deg, rgba(31,87,216,0.04) 0%, transparent 100%);
+    transition: width 0.4s ease;
+    z-index: -1;
+  }
+  .sector-row:hover::before { width: 100%; }
+  .sector-row:hover {
+    padding-left: 40px;
+  }
+  .sector-row:hover .sector-arrow { transform: translateX(8px); color: var(--accent); }
+  .sector-idx {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-muted);
+  }
+  .sector-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+  }
+  .sector-ko {
+    display: block;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 14px;
+    color: var(--ink-muted);
+    margin-top: 6px;
+    font-weight: 400;
+  }
+  .sector-desc {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.7;
+  }
+  .sector-arrow {
+    justify-self: end;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: var(--ink-muted);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* ======== SYNAPLIFE PLATFORM ======== */
+  .platform-section {
+    background: var(--paper-warm);
+    position: relative;
+    overflow: hidden;
+  }
+  .platform-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    margin-top: 60px;
+  }
+  .platform-diagram {
+    aspect-ratio: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .platform-text h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: clamp(32px, 3.5vw, 48px);
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+    margin-bottom: 28px;
+  }
+  .platform-text h3 .accent { color: var(--accent); font-style: italic; }
+  .platform-text p {
+    color: var(--ink-soft);
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+  }
+  .platform-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 32px;
+  }
+  .platform-tag {
+    padding: 8px 16px;
+    border: 1px solid var(--ink);
+    border-radius: 999px;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    color: var(--ink);
+    background: transparent;
+    transition: all 0.3s ease;
+  }
+  .platform-tag:hover {
+    background: var(--ink);
+    color: var(--paper);
+  }
+
+  /* ======== TEAM / 05 ======== */
+  .team-section { background: var(--paper); }
+  .founder {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 80px;
+    margin-top: 60px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid var(--line);
+  }
+  .founder-visual {
+    aspect-ratio: 3/4;
+    background: linear-gradient(160deg, #ede8dc 0%, #d4cdba 100%);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding: 32px;
+  }
+  .founder-visual::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 80%; height: 80%;
+    background: radial-gradient(circle, rgba(255,106,26,0.15) 0%, transparent 70%);
+  }
+  .founder-name-card {
+    position: relative;
+    z-index: 2;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+    letter-spacing: 0.1em;
+  }
+  .founder-name-card strong {
+    display: block;
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+    font-style: italic;
+  }
+  .founder-info h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 48px;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+  .founder-info .role {
+    font-size: 14px;
+    color: var(--accent);
+    letter-spacing: 0.05em;
+    margin-bottom: 32px;
+  }
+  .founder-info > p {
+    color: var(--ink-soft);
+    line-height: 1.8;
+    margin-bottom: 32px;
+    font-size: 15px;
+  }
+  .credentials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+  }
+  .cred-item h5 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--ink-muted);
+    letter-spacing: 0.15em;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .cred-item p {
+    font-size: 13px;
+    color: var(--ink);
+    line-height: 1.6;
+  }
+
+  .advisors {
+    margin-top: 80px;
+  }
+  .advisors-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 48px;
+  }
+  .advisors-head h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: 42px;
+    letter-spacing: -0.02em;
+  }
+  .advisor-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .advisor {
+    padding: 32px 24px;
+    border-radius: 4px;
+    position: relative;
+    color: var(--paper);
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+  }
+  .advisor:nth-child(1) { background: linear-gradient(160deg, #ff6a1a, #d9480f); }
+  .advisor:nth-child(2) { background: linear-gradient(160deg, #0e8a8d, #0a2a7a); }
+  .advisor:nth-child(3) { background: linear-gradient(160deg, #6b9c3f, #375f14); }
+  .advisor:nth-child(4) { background: linear-gradient(160deg, #1f4a7a, #0a1833); }
+  .advisor-field {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    opacity: 0.85;
+    margin-bottom: 12px;
+  }
+  .advisor h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: -0.01em;
+    margin-bottom: 10px;
+  }
+  .advisor p {
+    font-size: 13px;
+    line-height: 1.6;
+    opacity: 0.9;
+  }
+
+  /* ======== EPILOGUE / CTA ======== */
+  .epilogue {
+    background: var(--paper);
+    padding: 180px 48px;
+    position: relative;
+    overflow: hidden;
+  }
+  .epilogue-bg {
+    position: absolute;
+    inset: 0;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .epilogue-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .epilogue-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(40px, 6vw, 88px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    max-width: 1100px;
+    margin: 0 auto 48px;
+  }
+  .epilogue-title em {
+    color: var(--accent);
+    font-weight: 400;
+  }
+  .epilogue-body {
+    font-size: 17px;
+    color: var(--ink-soft);
+    line-height: 1.8;
+    max-width: 760px;
+    margin: 0 auto 60px;
+  }
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--ink);
+    color: var(--paper);
+    padding: 22px 40px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+    transition: all 0.3s ease;
+  }
+  .cta-button:hover {
+    background: var(--accent);
+    transform: translateY(-2px);
+  }
+  .cta-button svg { transition: transform 0.3s ease; }
+  .cta-button:hover svg { transform: translateX(4px); }
+
+  /* ======== FOOTER ======== */
+  footer {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 100px 48px 40px;
+    position: relative;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 60px;
+    max-width: 1400px;
+    margin: 0 auto 60px;
+  }
+  .footer-brand .display {
+    font-size: 54px;
+    margin-bottom: 20px;
+  }
+  .footer-brand .display .accent { color: var(--accent); font-style: italic; }
+  .footer-brand p {
+    color: rgba(247,245,240,0.7);
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 320px;
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 300;
+  }
+  .footer-col h5 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: var(--cyan);
+    margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+  .footer-col a, .footer-col p {
+    display: block;
+    color: rgba(247,245,240,0.8);
+    font-size: 14px;
+    padding: 6px 0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    line-height: 1.6;
+  }
+  .footer-col a:hover { color: var(--accent); }
+  .footer-bottom {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 32px;
+    border-top: 1px solid rgba(247,245,240,0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    color: rgba(247,245,240,0.5);
+    letter-spacing: 0.05em;
+  }
+
+  /* ======== ANIMATIONS ======== */
+  @keyframes waveMove {
+    0% { transform: translateX(0) translateY(0); }
+    50% { transform: translateX(-2%) translateY(-1%); }
+    100% { transform: translateX(0) translateY(0); }
+  }
+  .hero-waves svg { animation: waveMove 15s ease-in-out infinite; }
+
+  .reveal { opacity: 0; transform: translateY(30px); transition: opacity 1s ease, transform 1s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* ======== RESPONSIVE ======== */
+  @media (max-width: 900px) {
+    nav { padding: 16px 20px; }
+    nav ul { display: none; }
+    .hero { padding: 100px 20px 60px; }
+    .section-pad { padding: 100px 20px; }
+    .motto-section, .epilogue { padding: 100px 20px; }
+    .hero-subtitle { grid-template-columns: 1fr; gap: 40px; }
+    .hero-desc { justify-self: start; }
+    .brand-grid, .platform-grid, .founder { grid-template-columns: 1fr; gap: 40px; }
+    .brand-visual { position: relative; top: 0; }
+    .values-grid, .motto-body { grid-template-columns: 1fr; gap: 24px; }
+    .sector-header { grid-template-columns: 1fr; gap: 32px; }
+    .sector-row { grid-template-columns: 40px 1fr; gap: 16px; padding: 24px 12px; }
+    .sector-row .sector-desc, .sector-row .sector-arrow { display: none; }
+    .advisor-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-grid { grid-template-columns: 1fr; gap: 40px; }
+    .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+    .credentials { grid-template-columns: 1fr; }
+    .roles-grid { grid-template-columns: 1fr 1fr; }
+    .roadmap-grid { grid-template-columns: 1fr; }
+  }
+
+  .lang-toggle {
+    margin-left: 18px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid var(--ink);
+    background: transparent;
+    color: var(--ink);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+  .lang-toggle:hover {
+    background: var(--ink);
+    color: var(--paper);
+  }
+  @media (max-width: 860px) {
+    .lang-toggle { margin-left: 8px; padding: 5px 10px; font-size: 11px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<div id="site-ko" class="lang-view">
+<nav id="nav">
+  <div class="logo-mark">
+    <svg class="logo-hex" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="16,2 30,10 30,26 16,34 2,26 2,10" stroke="url(#hg)" stroke-width="2" fill="none"/>
+      <ellipse cx="16" cy="19" rx="11" ry="4.2" stroke="url(#pg)" stroke-width="2.2" fill="none" transform="rotate(-25 16 19)"/>
+      <ellipse cx="16" cy="19" rx="11" ry="4.2" stroke="url(#by)" stroke-width="2.2" fill="none" transform="rotate(25 16 19)"/>
+      <ellipse cx="16" cy="19" rx="4.6" ry="11.5" stroke="url(#om)" stroke-width="2.2" fill="none"/>
+      <circle cx="21.5" cy="10" r="1.5" fill="#f2a30f"/>
+      <defs>
+        <linearGradient id="hg" x1="0" y1="0" x2="32" y2="36">
+          <stop offset="0" stop-color="#e6007e"/>
+          <stop offset="1" stop-color="#ff8a3d"/>
+        </linearGradient>
+        <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#4c3aa0"/>
+          <stop offset="1" stop-color="#6dc24b"/>
+        </linearGradient>
+        <linearGradient id="by" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#1ba9e0"/>
+          <stop offset="1" stop-color="#e8d61f"/>
+        </linearGradient>
+        <linearGradient id="om" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#ff8a3d"/>
+          <stop offset="1" stop-color="#d6007f"/>
+        </linearGradient>
+      </defs>
+    </svg>
+    <span>Urban Synapse</span>
+  </div>
+  <ul>
+    <li><a href="#brand">Brand</a></li>
+    <li><a href="#vision">Vision</a></li>
+    <li><a href="#values">Values</a></li>
+    <li><a href="#sectors">Business</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#contact" class="nav-contact">Contact</a></li>
+  </ul>
+  <button class="lang-toggle" type="button" onclick="setSiteLang('en')">EN</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-waves">
+    <svg viewBox="0 0 1400 900" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="wave1" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#0a2a7a" stop-opacity="0.7"/>
+          <stop offset="0.5" stop-color="#1f57d8" stop-opacity="0.5"/>
+          <stop offset="1" stop-color="#4dd0e1" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <g stroke="url(#wave1)" fill="none" stroke-width="1.1">
+        <!-- multiple sine-like waves -->
+        <path d="M-100,300 C 200,100 400,500 700,300 S 1200,100 1500,300"/>
+        <path d="M-100,320 C 200,120 400,520 700,320 S 1200,120 1500,320"/>
+        <path d="M-100,340 C 200,140 400,540 700,340 S 1200,140 1500,340"/>
+        <path d="M-100,360 C 200,160 400,560 700,360 S 1200,160 1500,360"/>
+        <path d="M-100,380 C 200,180 400,580 700,380 S 1200,180 1500,380"/>
+        <path d="M-100,400 C 200,200 400,600 700,400 S 1200,200 1500,400"/>
+        <path d="M-100,420 C 200,220 400,620 700,420 S 1200,220 1500,420"/>
+        <path d="M-100,440 C 200,240 400,640 700,440 S 1200,240 1500,440"/>
+        <path d="M-100,460 C 200,260 400,660 700,460 S 1200,260 1500,460"/>
+        <path d="M-100,480 C 200,280 400,680 700,480 S 1200,280 1500,480"/>
+        <path d="M-100,500 C 200,300 400,700 700,500 S 1200,300 1500,500"/>
+        <path d="M-100,520 C 200,320 400,720 700,520 S 1200,320 1500,520"/>
+        <path d="M-100,540 C 200,340 400,740 700,540 S 1200,340 1500,540"/>
+        <path d="M-100,560 C 200,360 400,760 700,560 S 1200,360 1500,560"/>
+        <path d="M-100,580 C 200,380 400,780 700,580 S 1200,380 1500,580"/>
+        <path d="M-100,600 C 200,400 400,800 700,600 S 1200,400 1500,600"/>
+        <path d="M-100,620 C 200,420 400,820 700,620 S 1200,420 1500,620"/>
+        <path d="M-100,640 C 200,440 400,840 700,640 S 1200,440 1500,640"/>
+        <path d="M-100,660 C 200,460 400,860 700,660 S 1200,460 1500,660"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-meta">
+      <div>
+        <div class="mono">Urban Synapse ∕ EST. 2025</div>
+      </div>
+      <div style="text-align:right;">
+        <div class="mono">Seoul · Korea</div>
+        <div class="mono" style="margin-top:6px; color: var(--accent);">AI-INCLUSIVE URBAN DESIGN</div>
+      </div>
+    </div>
+
+    <h1 class="display hero-title">
+      <span class="urban">Urban</span>
+      <span class="synapse">Synapse.</span>
+    </h1>
+
+    <div class="hero-subtitle">
+      <p class="hero-tagline">도시와 삶을 연결하는<br/>포용디자인 플랫폼.</p>
+      <p class="hero-desc">
+        인간·기술·자연·사회적 관계·건강을 아우르는 초연결과 초융합을 통해, 
+        사람 중심의 지속가능한 AI 포용도시를 설계합니다. 
+        모든 세대가 자연스럽게 어우러지는 따뜻한 도시를 향해.
+      </p>
+    </div>
+  </div>
+
+  <div class="hero-foot">
+    <div class="mono">Human-Centered AGI Urbanism</div>
+    <div class="scroll-cue">
+      <span>SCROLL</span>
+      <span class="scroll-cue-line"></span>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND / 01 -->
+<section class="brand-section" id="brand">
+  <div class="section-pad">
+    <div class="section-number">01 / Brand</div>
+    <h2 class="display section-title">
+      연결, 그 따뜻한<br/>
+      <em style="font-style:italic; color:var(--accent); font-family:'Fraunces';">synapse.</em>
+    </h2>
+    <p class="section-lead">
+      시냅스는 인간 뇌에서 뉴런과 뉴런을 연결하는 접점입니다. 
+      정보가 흐르고, 기억이 형성되며, 학습과 반응이 이뤄지는 모든 출발점이 바로 '연결'에 있습니다. 
+      어반시냅스는 그 연결을 도시로 확장합니다.
+    </p>
+
+    <div class="brand-grid">
+      <div class="brand-visual">
+        <!-- orbital logo matching the new brand mark -->
+        <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bhex" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#e6007e"/>
+              <stop offset="1" stop-color="#ff8a3d"/>
+            </linearGradient>
+            <linearGradient id="bo1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#4c3aa0"/>
+              <stop offset="1" stop-color="#6dc24b"/>
+            </linearGradient>
+            <linearGradient id="bo2" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#1ba9e0"/>
+              <stop offset="1" stop-color="#e8d61f"/>
+            </linearGradient>
+            <linearGradient id="bo3" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0" stop-color="#d6007f"/>
+              <stop offset="1" stop-color="#ff8a3d"/>
+            </linearGradient>
+          </defs>
+          <polygon points="100,15 180,60 180,160 100,205 20,160 20,60" 
+                   stroke="url(#bhex)" stroke-width="2.5" fill="none" opacity="0.9"/>
+          <ellipse cx="100" cy="112" rx="62" ry="24" 
+                   stroke="url(#bo1)" stroke-width="7" fill="none" transform="rotate(-25 100 112)"/>
+          <ellipse cx="100" cy="112" rx="62" ry="24" 
+                   stroke="url(#bo2)" stroke-width="7" fill="none" transform="rotate(25 100 112)"/>
+          <ellipse cx="100" cy="112" rx="26" ry="68" 
+                   stroke="url(#bo3)" stroke-width="7" fill="none"/>
+          <circle cx="140" cy="55" r="7" fill="#f2a30f"/>
+        </svg>
+      </div>
+
+      <div class="brand-pillars">
+        <div class="pillar">
+          <div class="pillar-label">— connection</div>
+          <h3>뉴런과 뉴런, 사람과 도시.</h3>
+          <p>
+            물리적 공간을 넘어 디지털과 아날로그가 자연스럽게 융합된 생활 영역.
+            시민 개개인의 라이프스타일이 도시의 DNA가 되어 지속적으로 진화하는 
+            리빙시티(Living City)를 지향합니다.
+          </p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-label">— inclusiveness</div>
+          <h3>존재의 가치를 실현하는 환경.</h3>
+          <p>
+            장애 유무, 연령, 기술 접근성, 소득 수준과 무관하게 
+            모든 시민이 도시 안에서 존재의 가치를 실현할 수 있는 환경을 만듭니다.
+          </p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-label">— evolution</div>
+          <h3>진화하는 생명체로서의 도시.</h3>
+          <p>
+            도시는 단순한 물리적 공간이 아니라 삶이 흐르는 장입니다. 
+            기술 중심이 아닌 사람 중심 AI 기반으로, 더 좋은 삶을 위한 도시 디자인을 추구합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MOTTO / 02 -->
+<section class="motto-section" id="vision">
+  <div class="motto-waves">
+    <svg viewBox="0 0 1400 600" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:100%;">
+      <g stroke="#4dd0e1" fill="none" stroke-width="1" opacity="0.4">
+        <path d="M0,200 C 300,50 600,350 900,200 S 1400,50 1700,200"/>
+        <path d="M0,230 C 300,80 600,380 900,230 S 1400,80 1700,230"/>
+        <path d="M0,260 C 300,110 600,410 900,260 S 1400,110 1700,260"/>
+        <path d="M0,290 C 300,140 600,440 900,290 S 1400,140 1700,290"/>
+        <path d="M0,320 C 300,170 600,470 900,320 S 1400,170 1700,320"/>
+        <path d="M0,350 C 300,200 600,500 900,350 S 1400,200 1700,350"/>
+        <path d="M0,380 C 300,230 600,530 900,380 S 1400,230 1700,380"/>
+      </g>
+    </svg>
+  </div>
+  <div class="motto-inner">
+    <div class="section-number">02 / Motto</div>
+    <h2 class="motto-heading">
+      AI가 연결하는 <span class="hl">따뜻한 마을</span>, 
+      모든 세대가 함께 꿈꾸는 내일을 만들어갑니다.
+    </h2>
+    <div class="motto-body">
+      <p>
+        <strong>Human-Centered.</strong>
+        우리는 기술이 인간을 위해 존재해야 한다고 믿습니다. 
+        AI를 지나 다가올 AGI 시대에 첨단기술과 인간의 가치가 
+        조화롭게 융합된 도시환경을 구현합니다.
+      </p>
+      <p>
+        <strong>All Generations.</strong>
+        급속한 고령화 사회에서 모든 세대가 자연스럽게 어우러지는 
+        혁신적 해결책을 제시하며, 누구도 소외되지 않는 
+        지능형 사회환경을 조성합니다.
+      </p>
+      <p>
+        <strong>Sustainable City.</strong>
+        도시·사람·기술의 따뜻한 연결을 통해 환경적, 사회적, 
+        경제적 지속가능성을 실현하는 포용적 도시 디자인이 
+        우리의 궁극적 비전입니다.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CORE VALUES / 03 -->
+<section class="values-section" id="values">
+  <div class="section-pad">
+    <div class="section-number">03 / Core Values</div>
+    <h2 class="display section-title">
+      포용적 도시디자인을 선도하는<br/>
+      <em style="font-style:italic; color:var(--blue);">혁신적 비전과 경쟁력.</em>
+    </h2>
+    <p class="section-lead">
+      30년의 도시디자인 전문성을 바탕으로 물리적 공간에서 시민 서비스까지 아우르는 융합형 디자인을 실현하며, 
+      AI 기반 포용적 도시디자인을 통해 도시 혁신과 사람의 성장을 동시에 이루는 미래를 만들어갑니다.
+    </p>
+
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-num">01</div>
+        <h4>전문성 — Expertise</h4>
+        <ul>
+          <li>30년간의 풍부한 도시디자인 경험</li>
+          <li>경관·환경·랜드마크·구조물·단지특화</li>
+          <li>스마트시티 물리적 공간 디자인</li>
+          <li>리빙랩 시민 서비스까지 아우르는 융합형</li>
+        </ul>
+      </div>
+      <div class="value-card">
+        <div class="value-num">02</div>
+        <h4>혁신 — Innovation</h4>
+        <ul>
+          <li>AI 스마트시티 + 포용도시디자인 융합 컨설팅</li>
+          <li>슈퍼 시니어 "에이지 프라이드" 아카데미</li>
+          <li>AI 기술기업·전문가 국내외 매칭 서비스</li>
+          <li>일상 속의 AI 학습 시민센터 보편화 선도</li>
+        </ul>
+      </div>
+      <div class="value-card">
+        <div class="value-num">03</div>
+        <h4>가치 — Value</h4>
+        <ul>
+          <li>통합과 지속가능한 사회적 가치 추구</li>
+          <li>시민 성장기반의 리빙랩 운영</li>
+          <li>초고령사회 엘리트 시니어 인재 역량강화</li>
+          <li>사람중심의 기술융합, 포용성 지향</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUSINESS SECTORS / 04 -->
+<section class="sectors-section" id="sectors">
+  <div class="section-pad">
+    <div class="section-number">04 / Business Sectors</div>
+    <div class="sector-header">
+      <h2 class="display section-title" style="margin-bottom:0;">
+        네 개의 핵심 사업으로<br/>
+        <em style="font-style:italic; color:var(--accent); font-family:'Fraunces';">도시와 삶을 다시 연결합니다.</em>
+      </h2>
+      <p style="color: var(--ink-soft); line-height:1.8; font-size:16px;">
+        글로벌 에이전시, 포용돌봄, 리더십 성장, 도시혁신. 네 개의 사업이 유기적으로 연결되어 
+        AGI 시대의 포용도시 생태계를 완성합니다.
+      </p>
+    </div>
+
+    <div class="sectors-list">
+      <div class="sector-row">
+        <div class="sector-idx">01</div>
+        <div>
+          <div class="sector-title">ASCA KOREA 에이전시
+            <span class="sector-ko">글로벌 네트워크 — 아프리카 스마트시티·글로벌 서밋 에이전시</span>
+          </div>
+        </div>
+        <div class="sector-desc">
+          ASCA(Africa Smart Cities & Townships Alliance) 위원회 한국기업 전담 에이전시로 동아프리카 스마트시티·글로벌 서밋 
+          기업 소싱·매칭·성장·지원을 담당. 스마트시티 정책 개발 및 서비스 컨설팅, 스마트시티&라이프 리빙랩, ASCA K 포럼 운영까지 
+          해외 네트워크를 만드는 플랫폼.
+        </div>
+        <div class="sector-arrow">EXPLORE ⟶</div>
+      </div>
+
+      <div class="sector-row">
+        <div class="sector-idx">02</div>
+        <div>
+          <div class="sector-title">CARE 포용돌봄 플랫폼
+            <span class="sector-ko">시니어 통합 케어 — AI 기반 돌봄 서비스 코디네이션</span>
+          </div>
+        </div>
+        <div class="sector-desc">
+          통합돌봄 서비스 기획·운영·코디네이션을 담당하는 AI 시니어 통합 돌봄 플랫폼. 통합돌봄 플랫폼 PPP 사업, 
+          복지·케어 전문가 매칭 및 PMO, 세대통합 포용공간 디자인으로 공공지자체 모델을 구축하고 민간 플랫폼으로 확대. 
+          강남복지재단·리본케어·파주요양재단과 연계.
+        </div>
+        <div class="sector-arrow">EXPLORE ⟶</div>
+      </div>
+
+      <div class="sector-row">
+        <div class="sector-idx">03</div>
+        <div>
+          <div class="sector-title">AGE PRIDE 아카데미
+            <span class="sector-ko">리더십 성장 — 시니어 리더 최고위 과정</span>
+          </div>
+        </div>
+        <div class="sector-desc">
+          "나이는 숫자, 행복은 선택." 기업가·전문가를 위한 AI Leadership 아카데미. AI 에이전트 교육·자기전환형 커리큘럼, 
+          경제·문화·도시·AI 융합분야 최고 전문 강사진, 동문 멤버십, 유럽·미국 금융도시 및 기업 방문으로 사람을 성장시키는 플랫폼.
+        </div>
+        <div class="sector-arrow">EXPLORE ⟶</div>
+      </div>
+
+      <div class="sector-row">
+        <div class="sector-idx">04</div>
+        <div>
+          <div class="sector-title">Urban Innovation
+            <span class="sector-ko">도시혁신 — 도시정책·포용 공공사업 컨설팅</span>
+          </div>
+        </div>
+        <div class="sector-desc">
+          AI 포용공간디자인 컨설팅, 통합돌봄공간·세대통합 공간 디자인, 시민참여 C.X 리빙랩 퍼실리테이션, 
+          도시정책 개발을 아우르는 마스터 에이전트 플랫폼.
+        </div>
+        <div class="sector-arrow">EXPLORE ⟶</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SYNAPLIFE PLATFORM -->
+<section class="platform-section">
+  <div class="section-pad">
+    <div class="section-number">◦ Platform</div>
+    <div class="platform-grid">
+      <div class="platform-diagram">
+        <!-- synapse network diagram -->
+        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:520px;">
+          <defs>
+            <radialGradient id="cg" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0" stop-color="#0a2a7a"/>
+              <stop offset="1" stop-color="#0a1833"/>
+            </radialGradient>
+          </defs>
+          <!-- connection lines -->
+          <g stroke="#1f57d8" stroke-width="1.2" fill="none" opacity="0.4">
+            <line x1="250" y1="250" x2="120" y2="110"/>
+            <line x1="250" y1="250" x2="380" y2="110"/>
+            <line x1="250" y1="250" x2="90" y2="260"/>
+            <line x1="250" y1="250" x2="140" y2="410"/>
+            <line x1="250" y1="250" x2="360" y2="410"/>
+          </g>
+          <!-- central synapse -->
+          <circle cx="250" cy="250" r="62" fill="url(#cg)"/>
+          <text x="250" y="257" text-anchor="middle" fill="#ff6a1a" font-family="Fraunces" font-size="20" font-style="italic">SYNAPSE</text>
+          
+          <!-- node: 리빙랩 -->
+          <circle cx="120" cy="110" r="44" fill="#6b9c3f"/>
+          <text x="120" y="116" text-anchor="middle" fill="#fff" font-family="IBM Plex Sans KR" font-size="14" font-weight="600">리빙랩</text>
+          
+          <!-- node: 시민역량강화 -->
+          <circle cx="380" cy="110" r="44" fill="#4dd0e1"/>
+          <text x="380" y="112" text-anchor="middle" fill="#0a1833" font-family="IBM Plex Sans KR" font-size="11" font-weight="600">시민</text>
+          <text x="380" y="126" text-anchor="middle" fill="#0a1833" font-family="IBM Plex Sans KR" font-size="11" font-weight="600">역량강화</text>
+          
+          <!-- node: 멘토링 -->
+          <circle cx="90" cy="260" r="40" fill="#1f57d8"/>
+          <text x="90" y="266" text-anchor="middle" fill="#fff" font-family="IBM Plex Sans KR" font-size="13" font-weight="600">멘토링</text>
+          
+          <!-- node: 에이전시 -->
+          <circle cx="140" cy="410" r="40" fill="#e94d70"/>
+          <text x="140" y="416" text-anchor="middle" fill="#fff" font-family="IBM Plex Sans KR" font-size="12" font-weight="600">에이전시</text>
+          
+          <!-- node: 아카데미 -->
+          <circle cx="360" cy="410" r="42" fill="#ff6a1a"/>
+          <text x="360" y="416" text-anchor="middle" fill="#fff" font-family="IBM Plex Sans KR" font-size="13" font-weight="600">아카데미</text>
+          
+          <!-- small pulsing dots -->
+          <circle cx="250" cy="250" r="75" stroke="#1f57d8" stroke-width="1" fill="none" opacity="0.25">
+            <animate attributeName="r" values="68;85;68" dur="4s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.4;0.1;0.4" dur="4s" repeatCount="indefinite"/>
+          </circle>
+        </svg>
+      </div>
+      <div class="platform-text">
+        <div class="mono" style="color: var(--accent); margin-bottom: 16px;">SYNAPLIFE</div>
+        <h3>
+          <span class="accent">Inclusive</span> Design<br/>
+          Master Agent Network.
+        </h3>
+        <p>
+          어반시냅스의 통합 플랫폼 <strong style="color:var(--ink);">SYNAPLIFE</strong>는 
+          리빙랩, 시민역량강화, 멘토링, 에이전시, 아카데미를 
+          시냅스처럼 연결하는 마스터 에이전트 네트워크입니다.
+        </p>
+        <p>
+          스마트 시민성장센터 PARK를 중심으로 온라인과 오프라인, 
+          거버넌스와 시민을 잇는 O2O 시스템으로 지역의 지속가능한 미래를 만듭니다.
+        </p>
+        <p>
+          어반시냅스는 포용적 기반의 도시와 사람, 혁신기술을 연결하는 
+          스마트시티&amp; 라이프 플랫폼입니다.
+        </p>
+        <p>
+          어반시냅스는 따뜻한 연결을 통해 모든 세대를 위한 AI 포용도시서비스를 의미합니다.
+        </p>
+        <div class="platform-tags">
+          <span class="platform-tag">생활 리빙랩</span>
+          <span class="platform-tag">일자리 창출</span>
+          <span class="platform-tag">디지털 교육</span>
+          <span class="platform-tag">동네 커뮤니티</span>
+          <span class="platform-tag">15분 생활권</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM / 05 -->
+<section class="team-section" id="team">
+  <div class="section-pad">
+    <div class="section-number">05 / Our Team</div>
+    <h2 class="display section-title">대표 소개</h2>
+
+    <div class="founder">
+      <div class="founder-visual">
+        <div class="founder-name-card">
+          <strong>Choi Jeong Youn</strong>
+          FOUNDER · URBAN DESIGNER<br/>
+          MASTER AGENT CEO
+        </div>
+      </div>
+      <div class="founder-info">
+        <h3>최정윤 <em style="font-size:24px; color:var(--ink-muted); font-style:normal;">Jeong Youn Choi</em></h3>
+        <div class="role">어반시냅스 마스터 에이전트 총괄대표 — 도시 디자이너</div>
+        <p>
+          경관, 공공, 환경, 브랜딩, 스마트시티, 기술융합디자인 개발, 공공디자인, 시민 리빙랩 등 
+          30년 동안 도시디자인 전 분야에서 다양한 활동을 해온 도시디자인 전문가. 
+          특허, 디자인 등록 200여 개, 대통령상, 시장, 구청장, 산자부 디자인혁신상, 
+          베이징 래드닷 등 30여 회 수상경력 보유. 디자인 씽킹 전문가, 리빙랩 퍼실리테이터 전문가, 
+          색채전문가, 탄소중립지도사, 인공지능 재난안전관리사, ESG 글로컬 리더.
+        </p>
+        <div class="credentials">
+          <div class="cred-item">
+            <h5>— Awards</h5>
+            <p>특허·디자인 등록 200여 개<br/>대통령상, 시장·구청장상, 산자부 디자인혁신상<br/>베이징 레드닷 등 30여 회 수상</p>
+          </div>
+          <div class="cred-item">
+            <h5>— Expertise</h5>
+            <p>디자인 씽킹 전문가<br/>리빙랩 퍼실리테이터, 색채전문가<br/>탄소중립지도사, ESG 글로컬 리더</p>
+          </div>
+          <div class="cred-item">
+            <h5>— Memberships</h5>
+            <p>K-AI 도시라이프포럼<br/>한국디지털포용협회, 한국재난안전경영협회<br/>아름다운 주택포럼, 한국의 길과 문화</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="roles-grid">
+      <div class="value-card">
+        <h4 style="color:var(--blue);">PMO 총괄 <span style="color:var(--ink-muted); font-weight:400;">Coordinator</span></h4>
+        <ul>
+          <li>전문가 팀 구성 및 역할 배분</li>
+          <li>일정 관리 및 품질 검수</li>
+          <li>프로젝트 리스크 관리</li>
+        </ul>
+      </div>
+      <div class="value-card">
+        <h4 style="color:var(--accent);">대외 <span style="color:var(--ink-muted); font-weight:400;">Ambassador</span></h4>
+        <ul>
+          <li>파트너십 협상 및 계약 체결</li>
+          <li>포럼 발표 및 기조연설</li>
+          <li>어반시냅스 대외 대표</li>
+        </ul>
+      </div>
+      <div class="value-card">
+        <h4 style="color:var(--cyan);">네트워크 <span style="color:var(--ink-muted); font-weight:400;">Connector</span></h4>
+        <ul>
+          <li>공공·민간·대학·해외 파트너 연결</li>
+          <li>기술기업 ↔ 수요기관 매칭</li>
+          <li>지자체·복지기관·공공기관·대학</li>
+        </ul>
+      </div>
+      <div class="value-card">
+        <h4 style="color:#6a3fa0;">사업기획 <span style="color:var(--ink-muted); font-weight:400;">Planner</span></h4>
+        <ul>
+          <li>공공·민간 프로젝트 기획 구조화</li>
+          <li>사업성 판단 및 제안서 작성</li>
+          <li>ASCA KOREA 포럼 운영</li>
+          <li>단기 매출화 전략 설계</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section class="roadmap-section">
+  <div class="section-pad">
+    <div class="section-number">◦ Roadmap</div>
+    <h2 class="display section-title">
+      2026<span style="color:var(--ink-muted);">–</span>2027<br/>
+      <em style="font-style:italic; color:var(--accent); font-family:'Fraunces';">로드맵.</em>
+    </h2>
+
+    <div class="roadmap-grid">
+      <div class="roadmap-col">
+        <div class="roadmap-period" style="background:#0a2a7a;">2026<span>5~7월</span></div>
+        <div class="roadmap-card"><span class="roadmap-dot" style="background:#0a2a7a;"></span>ASCA 비즈 서밋 2026</div>
+        <div class="roadmap-card"><span class="roadmap-dot" style="background:#0a2a7a;"></span>한국기업 공식 에이전시</div>
+      </div>
+      <div class="roadmap-col">
+        <div class="roadmap-period" style="background:#1f57d8;">2026<span>8월</span></div>
+        <div class="roadmap-card"><span class="roadmap-dot" style="background:#1f57d8;"></span>ASCA 비즈위크 서밋 한국기업 매칭</div>
+        <div class="roadmap-card"><span class="roadmap-dot" style="background:#1f57d8;"></span>ASCA 2026 비즈위크 참여, 케냐 키수무 공식 MOU</div>
+      </div>
+      <div class="roadmap-col">
+        <div class="roadmap-period" style="background:#1f9e7a;">2026<span>9월~11월</span></div>
+        <div class="roadmap-card"><span class="roadmap-dot" style="background:#1f9e7a;"></span>케어 플랫폼 모니터링</div>
+        <div class="roadmap-card"><span class="roadmap-dot" style="background:#1f9e7a;"></span>케어 플랫폼 PPT 사업 전환, ASCA 후반기 사업 기획 · ASCA KOREA FORUM 구성</div>
+      </div>
+      <div class="roadmap-col">
+        <div class="roadmap-period" style="background:var(--accent);">2027<span>3월</span></div>
+        <div class="roadmap-card"><span class="roadmap-dot" style="background:var(--accent);"></span>레퍼런스 3건 확보 <span style="color:var(--ink-muted); font-size:12px;">(ASCA·돌봄·아카데미)</span></div>
+        <div class="roadmap-card"><span class="roadmap-dot" style="background:var(--accent);"></span>엘리트 시니어 금융 프리미엄 아카데미 개설</div>
+      </div>
+      <div class="roadmap-col">
+        <div class="roadmap-period" style="background:#6a3fa0;">2027<span>상반기</span></div>
+        <div class="roadmap-card"><span class="roadmap-dot" style="background:#6a3fa0;"></span>ASCA 뉴욕, 케어플랫폼 PPP 2차</div>
+        <div class="roadmap-card"><span class="roadmap-dot" style="background:#6a3fa0;"></span>ASCA 매칭 기업, 아프리카 코리아 비즈 서밋</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EPILOGUE -->
+<section class="epilogue" id="contact">
+  <div class="epilogue-bg">
+    <svg viewBox="0 0 1400 600" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:100%;">
+      <g stroke="#1f57d8" fill="none" stroke-width="1" opacity="0.3">
+        <path d="M0,200 C 300,50 600,350 900,200 S 1400,50 1700,200"/>
+        <path d="M0,220 C 300,70 600,370 900,220 S 1400,70 1700,220"/>
+        <path d="M0,240 C 300,90 600,390 900,240 S 1400,90 1700,240"/>
+        <path d="M0,260 C 300,110 600,410 900,260 S 1400,110 1700,260"/>
+        <path d="M0,280 C 300,130 600,430 900,280 S 1400,130 1700,280"/>
+        <path d="M0,300 C 300,150 600,450 900,300 S 1400,150 1700,300"/>
+      </g>
+    </svg>
+  </div>
+  <div class="epilogue-inner">
+    <div class="section-number" style="justify-content:center; display:inline-flex;">06 / Epilogue</div>
+    <h2 class="epilogue-title">
+      시냅스처럼 지능적으로 연결하여,<br/>
+      <em>누구도 소외되지 않는</em> 도시를.
+    </h2>
+    <p class="epilogue-body">
+      어반시냅스는 따뜻한 기술과 시민의 지혜를 나누는 리빙랩을 통해 포용적 가치 생태계를 조성하고, 
+      협력과 배려가 공존하는 지속가능한 지능형 미래 도시를 향해 나아갑니다. 
+      함께 하고 싶은 파트너, 지자체, 시민을 기다립니다.
+    </p>
+    <a href="mailto:usp@urbansynapse.kr" class="cta-button">
+      프로젝트 문의하기
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 9H16M16 9L10 3M16 9L10 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="display"><span class="accent">Urban</span> Synapse.</div>
+      <p>도시·사람·기술의 따뜻한 연결을 통해 모든 세대를 위한 AI 포용도시서비스를 만들어 갑니다.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <a href="mailto:usp@urbansynapse.kr">usp@urbansynapse.kr</a>
+      <p>82 · 02 · 3471 · 9588</p>
+      <a href="https://www.urbansynapse.kr" target="_blank">WWW.urbansynapse.kr</a>
+    </div>
+    <div class="footer-col">
+      <h5>Navigation</h5>
+      <a href="#brand">Brand</a>
+      <a href="#vision">Vision</a>
+      <a href="#values">Core Values</a>
+      <a href="#sectors">Business</a>
+      <a href="#team">Team</a>
+    </div>
+    <div class="footer-col">
+      <h5>Platform</h5>
+      <a href="#">ASCA KOREA 에이전시</a>
+      <a href="#">CARE 포용돌봄 플랫폼</a>
+      <a href="#">Age Pride Academy</a>
+      <a href="#">Urban Innovation</a>
+      <a href="#">C.X Living Lab</a>
+      <p style="margin-top: 12px; color:var(--accent); font-weight:500;">ASCA KOREA</p>
+      <a href="mailto:ascakorea@urbansynapse.kr">ascakorea@urbansynapse.kr</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 URBAN SYNAPSE. All rights reserved.</div>
+    <div class="mono">Human-Centered AGI Urbanism · Seoul, Korea</div>
+  </div>
+</footer>
+
+
+</div>
+<div id="site-en" class="lang-view" style="display:none;">
+<nav id="nav-en">
+  <div class="logo-mark">
+    <svg class="logo-hex" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="16,2 30,10 30,26 16,34 2,26 2,10" stroke="url(#hg-en)" stroke-width="2" fill="none"/>
+      <ellipse cx="16" cy="19" rx="11" ry="4.2" stroke="url(#pg-en)" stroke-width="2.2" fill="none" transform="rotate(-25 16 19)"/>
+      <ellipse cx="16" cy="19" rx="11" ry="4.2" stroke="url(#by-en)" stroke-width="2.2" fill="none" transform="rotate(25 16 19)"/>
+      <ellipse cx="16" cy="19" rx="4.6" ry="11.5" stroke="url(#om-en)" stroke-width="2.2" fill="none"/>
+      <circle cx="21.5" cy="10" r="1.5" fill="#f2a30f"/>
+      <defs>
+        <linearGradient id="hg-en" x1="0" y1="0" x2="32" y2="36">
+          <stop offset="0" stop-color="#e6007e"/>
+          <stop offset="1" stop-color="#ff8a3d"/>
+        </linearGradient>
+        <linearGradient id="pg-en" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#4c3aa0"/>
+          <stop offset="1" stop-color="#6dc24b"/>
+        </linearGradient>
+        <linearGradient id="by-en" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#1ba9e0"/>
+          <stop offset="1" stop-color="#e8d61f"/>
+        </linearGradient>
+        <linearGradient id="om-en" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#ff8a3d"/>
+          <stop offset="1" stop-color="#d6007f"/>
+        </linearGradient>
+      </defs>
+    </svg>
+    <span>Urban Synapse</span>
+  </div>
+  <ul>
+    <li><a href="#brand-en">Brand</a></li>
+    <li><a href="#vision-en">Vision</a></li>
+    <li><a href="#values-en">Values</a></li>
+    <li><a href="#sectors-en">Business</a></li>
+    <li><a href="#team-en">Team</a></li>
+    <li><a href="#contact-en" class="nav-contact">Contact</a></li>
+  </ul>
+  <button class="lang-toggle" type="button" onclick="setSiteLang('ko')">KO</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-waves">
+    <svg viewBox="0 0 1400 900" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="wave1-en" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#0a2a7a" stop-opacity="0.7"/>
+          <stop offset="0.5" stop-color="#1f57d8" stop-opacity="0.5"/>
+          <stop offset="1" stop-color="#4dd0e1" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <g stroke="url(#wave1-en)" fill="none" stroke-width="1.1">
+        <!-- multiple sine-like waves -->
+        <path d="M-100,300 C 200,100 400,500 700,300 S 1200,100 1500,300"/>
+        <path d="M-100,320 C 200,120 400,520 700,320 S 1200,120 1500,320"/>
+        <path d="M-100,340 C 200,140 400,540 700,340 S 1200,140 1500,340"/>
+        <path d="M-100,360 C 200,160 400,560 700,360 S 1200,160 1500,360"/>
+        <path d="M-100,380 C 200,180 400,580 700,380 S 1200,180 1500,380"/>
+        <path d="M-100,400 C 200,200 400,600 700,400 S 1200,200 1500,400"/>
+        <path d="M-100,420 C 200,220 400,620 700,420 S 1200,220 1500,420"/>
+        <path d="M-100,440 C 200,240 400,640 700,440 S 1200,240 1500,440"/>
+        <path d="M-100,460 C 200,260 400,660 700,460 S 1200,260 1500,460"/>
+        <path d="M-100,480 C 200,280 400,680 700,480 S 1200,280 1500,480"/>
+        <path d="M-100,500 C 200,300 400,700 700,500 S 1200,300 1500,500"/>
+        <path d="M-100,520 C 200,320 400,720 700,520 S 1200,320 1500,520"/>
+        <path d="M-100,540 C 200,340 400,740 700,540 S 1200,340 1500,540"/>
+        <path d="M-100,560 C 200,360 400,760 700,560 S 1200,360 1500,560"/>
+        <path d="M-100,580 C 200,380 400,780 700,580 S 1200,380 1500,580"/>
+        <path d="M-100,600 C 200,400 400,800 700,600 S 1200,400 1500,600"/>
+        <path d="M-100,620 C 200,420 400,820 700,620 S 1200,420 1500,620"/>
+        <path d="M-100,640 C 200,440 400,840 700,640 S 1200,440 1500,640"/>
+        <path d="M-100,660 C 200,460 400,860 700,660 S 1200,460 1500,660"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-meta">
+      <div>
+        <div class="mono">Urban Synapse ∕ EST. 2025</div>
+      </div>
+      <div style="text-align:right;">
+        <div class="mono">Seoul · Korea</div>
+        <div class="mono" style="margin-top:6px; color: var(--accent);">AI-INCLUSIVE URBAN DESIGN</div>
+      </div>
+    </div>
+
+    <h1 class="display hero-title">
+      <span class="urban">Urban</span>
+      <span class="synapse">Synapse.</span>
+    </h1>
+
+    <div class="hero-subtitle">
+      <p class="hero-tagline">Connecting cities and life<br/>through inclusive design.</p>
+      <p class="hero-desc">
+        Through hyper-connection and hyper-convergence spanning humans, technology, 
+        nature, social relationships and health, we design sustainable, 
+        human-centered AI-inclusive cities — toward a warm city where every generation belongs.
+      </p>
+    </div>
+  </div>
+
+  <div class="hero-foot">
+    <div class="mono">Human-Centered AGI Urbanism</div>
+    <div class="scroll-cue">
+      <span>SCROLL</span>
+      <span class="scroll-cue-line"></span>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND / 01 -->
+<section class="brand-section" id="brand-en">
+  <div class="section-pad">
+    <div class="section-number">01 / Brand</div>
+    <h2 class="display section-title">
+      A warm kind of<br/>
+      <em style="font-style:italic; color:var(--accent); font-family:'Fraunces';">synapse.</em>
+    </h2>
+    <p class="section-lead">
+      A synapse is the point where neuron meets neuron in the human brain — 
+      where information flows, memory forms, and every act of learning and response begins with connection. 
+      Urban Synapse extends that connection to the city.
+    </p>
+
+    <div class="brand-grid">
+      <div class="brand-visual">
+        <!-- orbital logo matching the new brand mark -->
+        <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bhex-en" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#e6007e"/>
+              <stop offset="1" stop-color="#ff8a3d"/>
+            </linearGradient>
+            <linearGradient id="bo1-en" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#4c3aa0"/>
+              <stop offset="1" stop-color="#6dc24b"/>
+            </linearGradient>
+            <linearGradient id="bo2-en" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#1ba9e0"/>
+              <stop offset="1" stop-color="#e8d61f"/>
+            </linearGradient>
+            <linearGradient id="bo3-en" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0" stop-color="#d6007f"/>
+              <stop offset="1" stop-color="#ff8a3d"/>
+            </linearGradient>
+          </defs>
+          <polygon points="100,15 180,60 180,160 100,205 20,160 20,60" 
+                   stroke="url(#bhex-en)" stroke-width="2.5" fill="none" opacity="0.9"/>
+          <ellipse cx="100" cy="112" rx="62" ry="24" 
+                   stroke="url(#bo1-en)" stroke-width="7" fill="none" transform="rotate(-25 100 112)"/>
+          <ellipse cx="100" cy="112" rx="62" ry="24" 
+                   stroke="url(#bo2-en)" stroke-width="7" fill="none" transform="rotate(25 100 112)"/>
+          <ellipse cx="100" cy="112" rx="26" ry="68" 
+                   stroke="url(#bo3-en)" stroke-width="7" fill="none"/>
+          <circle cx="140" cy="55" r="7" fill="#f2a30f"/>
+        </svg>
+      </div>
+
+      <div class="brand-pillars">
+        <div class="pillar">
+          <div class="pillar-label">— connection</div>
+          <h3>Neuron to neuron. Person to city.</h3>
+          <p>
+            A living space where digital and analog blend seamlessly beyond physical boundaries.
+            We aim for a Living City where each citizen's lifestyle becomes part of 
+            the city's DNA, continuously evolving.
+          </p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-label">— inclusiveness</div>
+          <h3>An environment that realizes the value of every life.</h3>
+          <p>
+            Regardless of disability, age, technological access or income level, 
+            we create an environment where every citizen can realize their value within the city.
+          </p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-label">— evolution</div>
+          <h3>The city as a living, evolving organism.</h3>
+          <p>
+            A city is not merely physical space — it is where life flows. 
+            Grounded in people-centered AI rather than technology for its own sake, 
+            we pursue urban design for a better life.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MOTTO / 02 -->
+<section class="motto-section" id="vision-en">
+  <div class="motto-waves">
+    <svg viewBox="0 0 1400 600" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:100%;">
+      <g stroke="#4dd0e1" fill="none" stroke-width="1" opacity="0.4">
+        <path d="M0,200 C 300,50 600,350 900,200 S 1400,50 1700,200"/>
+        <path d="M0,230 C 300,80 600,380 900,230 S 1400,80 1700,230"/>
+        <path d="M0,260 C 300,110 600,410 900,260 S 1400,110 1700,260"/>
+        <path d="M0,290 C 300,140 600,440 900,290 S 1400,140 1700,290"/>
+        <path d="M0,320 C 300,170 600,470 900,320 S 1400,170 1700,320"/>
+        <path d="M0,350 C 300,200 600,500 900,350 S 1400,200 1700,350"/>
+        <path d="M0,380 C 300,230 600,530 900,380 S 1400,230 1700,380"/>
+      </g>
+    </svg>
+  </div>
+  <div class="motto-inner">
+    <div class="section-number">02 / Motto</div>
+    <h2 class="motto-heading">
+      A <span class="hl">warm village</span> connected by AI — 
+      building a tomorrow every generation dreams of, together.
+    </h2>
+    <div class="motto-body">
+      <p>
+        <strong>Human-Centered.</strong>
+        We believe technology must exist for people. As we move from AI toward 
+        the coming AGI era, we build urban environments where advanced technology 
+        and human values merge in harmony.
+      </p>
+      <p>
+        <strong>All Generations.</strong>
+        In a rapidly aging society, we offer innovative solutions where every 
+        generation naturally comes together, creating an intelligent social 
+        environment where no one is left behind.
+      </p>
+      <p>
+        <strong>Sustainable City.</strong>
+        Our ultimate vision is an inclusive urban design that realizes 
+        environmental, social and economic sustainability through the warm 
+        connection of city, people and technology.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CORE VALUES / 03 -->
+<section class="values-section" id="values-en">
+  <div class="section-pad">
+    <div class="section-number">03 / Core Values</div>
+    <h2 class="display section-title">
+      Leading inclusive urban design with<br/>
+      <em style="font-style:italic; color:var(--blue);">an innovative vision and edge.</em>
+    </h2>
+    <p class="section-lead">
+      Built on 30 years of expertise in urban design spanning physical space to citizen 
+      services, we create a future where urban innovation and human growth advance 
+      together through AI-based inclusive urban design.
+    </p>
+
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-num">01</div>
+        <h4>Expertise</h4>
+        <ul>
+          <li>30 years of rich urban design experience</li>
+          <li>Landscape, environment, landmarks, structures &amp; complexes</li>
+          <li>Smart city physical space design</li>
+          <li>Convergent design spanning living labs to citizen services</li>
+        </ul>
+      </div>
+      <div class="value-card">
+        <div class="value-num">02</div>
+        <h4>Innovation</h4>
+        <ul>
+          <li>AI smart city + inclusive urban design consulting</li>
+          <li>The "Age Pride" academy for super seniors</li>
+          <li>Matching AI companies &amp; experts, domestic and global</li>
+          <li>Pioneering everyday AI-learning citizen centers</li>
+        </ul>
+      </div>
+      <div class="value-card">
+        <div class="value-num">03</div>
+        <h4>Value</h4>
+        <ul>
+          <li>Pursuing integration and sustainable social value</li>
+          <li>Running living labs built on citizen growth</li>
+          <li>Empowering elite senior talent for a super-aged society</li>
+          <li>People-centered technology, oriented toward inclusion</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUSINESS SECTORS / 04 -->
+<section class="sectors-section" id="sectors-en">
+  <div class="section-pad">
+    <div class="section-number">04 / Business Sectors</div>
+    <div class="sector-header">
+      <h2 class="display section-title" style="margin-bottom:0;">
+        Four core businesses,<br/>
+        <em style="font-style:italic; color:var(--accent); font-family:'Fraunces';">reconnecting the city and life.</em>
+      </h2>
+      <p style="color: var(--ink-soft); line-height:1.8; font-size:16px;">
+        Global agency, inclusive care, leadership growth and urban innovation — 
+        four organically connected businesses completing an inclusive urban ecosystem for the AGI era.
+      </p>
+    </div>
+
+    <div class="sectors-list">
+      <div class="sector-row">
+        <div class="sector-idx">01</div>
+        <div>
+          <div class="sector-title">ASCA KOREA Agency
+            <span class="sector-ko">Global Network — Africa Smart City &amp; Global Summit Agency</span>
+          </div>
+        </div>
+        <div class="sector-desc">
+          The official Korean-company agency for the ASCA (Africa Smart Cities &amp; Townships Alliance) 
+          committee, leading company sourcing, matching, growth and support for East African smart city 
+          &amp; global summits — plus smart city policy development, service consulting, smart city &amp; life 
+          living labs, and the ASCA K Forum. A platform that builds networks abroad.
+        </div>
+        <div class="sector-arrow">EXPLORE ⟶</div>
+      </div>
+
+      <div class="sector-row">
+        <div class="sector-idx">02</div>
+        <div>
+          <div class="sector-title">CARE Inclusive Platform
+            <span class="sector-ko">Senior Integrated Care — AI-Based Care Service Coordination</span>
+          </div>
+        </div>
+        <div class="sector-desc">
+          An AI-based senior integrated care platform handling the planning, operation and 
+          coordination of integrated care services. Through PPP care-platform projects, matching of 
+          welfare/care experts with PMO support, and inclusive intergenerational space design, we build 
+          public models with local governments and expand into private platforms — in partnership with 
+          the Gangnam Welfare Foundation, Ribon Care and Paju Elderly Care Foundation.
+        </div>
+        <div class="sector-arrow">EXPLORE ⟶</div>
+      </div>
+
+      <div class="sector-row">
+        <div class="sector-idx">03</div>
+        <div>
+          <div class="sector-title">AGE PRIDE Academy
+            <span class="sector-ko">Leadership Growth — Executive Program for Senior Leaders</span>
+          </div>
+        </div>
+        <div class="sector-desc">
+          "Age is just a number; happiness is a choice." An AI Leadership academy for entrepreneurs 
+          and professionals, offering AI-agent education with a self-transforming curriculum, top instructors 
+          across economy, culture, city and AI convergence, an alumni membership, and study visits to 
+          financial cities and companies in Europe and the U.S. — a platform that grows people.
+        </div>
+        <div class="sector-arrow">EXPLORE ⟶</div>
+      </div>
+
+      <div class="sector-row">
+        <div class="sector-idx">04</div>
+        <div>
+          <div class="sector-title">Urban Innovation
+            <span class="sector-ko">Urban Renewal — City Policy &amp; Inclusive Public Project Consulting</span>
+          </div>
+        </div>
+        <div class="sector-desc">
+          A master-agent platform spanning AI inclusive space design consulting, integrated-care 
+          and intergenerational space design, citizen-participation C.X living lab facilitation, and urban policy development.
+        </div>
+        <div class="sector-arrow">EXPLORE ⟶</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SYNAPLIFE PLATFORM -->
+<section class="platform-section">
+  <div class="section-pad">
+    <div class="section-number">◦ Platform</div>
+    <div class="platform-grid">
+      <div class="platform-diagram">
+        <!-- synapse network diagram -->
+        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:520px;">
+          <defs>
+            <radialGradient id="cg-en" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0" stop-color="#0a2a7a"/>
+              <stop offset="1" stop-color="#0a1833"/>
+            </radialGradient>
+          </defs>
+          <!-- connection lines -->
+          <g stroke="#1f57d8" stroke-width="1.2" fill="none" opacity="0.4">
+            <line x1="250" y1="250" x2="120" y2="110"/>
+            <line x1="250" y1="250" x2="380" y2="110"/>
+            <line x1="250" y1="250" x2="90" y2="260"/>
+            <line x1="250" y1="250" x2="140" y2="410"/>
+            <line x1="250" y1="250" x2="360" y2="410"/>
+          </g>
+          <!-- central synapse -->
+          <circle cx="250" cy="250" r="62" fill="url(#cg-en)"/>
+          <text x="250" y="257" text-anchor="middle" fill="#ff6a1a" font-family="Fraunces" font-size="20" font-style="italic">SYNAPSE</text>
+          
+          <!-- node: 리빙랩 -->
+          <circle cx="120" cy="110" r="44" fill="#6b9c3f"/>
+          <text x="120" y="116" text-anchor="middle" fill="#fff" font-family="IBM Plex Sans KR" font-size="13" font-weight="600">Living Lab</text>
+          
+          <!-- node: 시민역량강화 -->
+          <circle cx="380" cy="110" r="44" fill="#4dd0e1"/>
+          <text x="380" y="112" text-anchor="middle" fill="#0a1833" font-family="IBM Plex Sans KR" font-size="11" font-weight="600">Citizen</text>
+          <text x="380" y="126" text-anchor="middle" fill="#0a1833" font-family="IBM Plex Sans KR" font-size="11" font-weight="600">Empowerment</text>
+          
+          <!-- node: 멘토링 -->
+          <circle cx="90" cy="260" r="40" fill="#1f57d8"/>
+          <text x="90" y="266" text-anchor="middle" fill="#fff" font-family="IBM Plex Sans KR" font-size="12" font-weight="600">Mentoring</text>
+          
+          <!-- node: 에이전시 -->
+          <circle cx="140" cy="410" r="40" fill="#e94d70"/>
+          <text x="140" y="416" text-anchor="middle" fill="#fff" font-family="IBM Plex Sans KR" font-size="12" font-weight="600">Agency</text>
+          
+          <!-- node: 아카데미 -->
+          <circle cx="360" cy="410" r="42" fill="#ff6a1a"/>
+          <text x="360" y="416" text-anchor="middle" fill="#fff" font-family="IBM Plex Sans KR" font-size="12" font-weight="600">Academy</text>
+          
+          <!-- small pulsing dots -->
+          <circle cx="250" cy="250" r="75" stroke="#1f57d8" stroke-width="1" fill="none" opacity="0.25">
+            <animate attributeName="r" values="68;85;68" dur="4s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.4;0.1;0.4" dur="4s" repeatCount="indefinite"/>
+          </circle>
+        </svg>
+      </div>
+      <div class="platform-text">
+        <div class="mono" style="color: var(--accent); margin-bottom: 16px;">SYNAPLIFE</div>
+        <h3>
+          <span class="accent">Inclusive</span> Design<br/>
+          Master Agent Network.
+        </h3>
+        <p>
+          Urban Synapse's integrated platform <strong style="color:var(--ink);">SYNAPLIFE</strong> 
+          is a master-agent network connecting living labs, citizen empowerment, mentoring, 
+          agency and academy — just like a synapse.
+        </p>
+        <p>
+          Centered on the smart citizen growth center PARK, an O2O system bridges online and offline, 
+          governance and citizens, to build a sustainable future for the region.
+        </p>
+        <p>
+          Urban Synapse is an inclusive smart city &amp; life platform that connects 
+          the city, people and innovative technology.
+        </p>
+        <p>
+          Urban Synapse means AI-inclusive urban services for every generation, built through warm connection.
+        </p>
+        <div class="platform-tags">
+          <span class="platform-tag">Everyday Living Lab</span>
+          <span class="platform-tag">Job Creation</span>
+          <span class="platform-tag">Digital Education</span>
+          <span class="platform-tag">Neighborhood Community</span>
+          <span class="platform-tag">15-Minute City</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM / 05 -->
+<section class="team-section" id="team-en">
+  <div class="section-pad">
+    <div class="section-number">05 / Our Team</div>
+    <h2 class="display section-title">Leadership Profile</h2>
+
+    <div class="founder">
+      <div class="founder-visual">
+        <div class="founder-name-card">
+          <strong>Choi Jeong Youn</strong>
+          FOUNDER · URBAN DESIGNER<br/>
+          MASTER AGENT CEO
+        </div>
+      </div>
+      <div class="founder-info">
+        <h3>최정윤 <em style="font-size:24px; color:var(--ink-muted); font-style:normal;">Jeong Youn Choi</em></h3>
+        <div class="role">Master Agent CEO, Urban Synapse — Urban Designer</div>
+        <p>
+          An urban design expert active across landscape, public, environmental, branding, 
+          smart city, technology-convergence design, public design and citizen living labs 
+          for 30 years. Holds 200+ patents &amp; design registrations, and 30+ awards including 
+          the Presidential Award, Mayoral/District awards, the MOTIE Design Innovation Award and 
+          the Beijing Red Dot. A Design Thinking expert, Living Lab facilitator, color expert, 
+          carbon-neutrality instructor, AI disaster-safety manager, and ESG glocal leader.
+        </p>
+        <div class="credentials">
+          <div class="cred-item">
+            <h5>— Awards</h5>
+            <p>200+ patents &amp; design registrations<br/>Presidential Award, Mayoral/District awards, MOTIE Design Innovation Award<br/>30+ awards incl. Beijing Red Dot</p>
+          </div>
+          <div class="cred-item">
+            <h5>— Expertise</h5>
+            <p>Design Thinking expert<br/>Living Lab facilitator, color expert<br/>Carbon-neutrality instructor, ESG glocal leader</p>
+          </div>
+          <div class="cred-item">
+            <h5>— Memberships</h5>
+            <p>K-AI Urban Life Forum<br/>Korea Digital Inclusion Association, Korea Disaster Safety Management Association<br/>Beautiful Housing Forum, Korea's Roads &amp; Culture</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="roles-grid">
+      <div class="value-card">
+        <h4 style="color:var(--blue);">PMO <span style="color:var(--ink-muted); font-weight:400;">Coordinator</span></h4>
+        <ul>
+          <li>Building the expert team &amp; assigning roles</li>
+          <li>Schedule management &amp; quality control</li>
+          <li>Project risk management</li>
+        </ul>
+      </div>
+      <div class="value-card">
+        <h4 style="color:var(--accent);">External <span style="color:var(--ink-muted); font-weight:400;">Ambassador</span></h4>
+        <ul>
+          <li>Partnership negotiation &amp; contracting</li>
+          <li>Forum presentations &amp; keynote speaking</li>
+          <li>Official external representative of Urban Synapse</li>
+        </ul>
+      </div>
+      <div class="value-card">
+        <h4 style="color:var(--cyan);">Network <span style="color:var(--ink-muted); font-weight:400;">Connector</span></h4>
+        <ul>
+          <li>Connecting public, private, academic &amp; overseas partners</li>
+          <li>Matching tech companies with demand-side organizations</li>
+          <li>Local governments, welfare &amp; public institutions, universities</li>
+        </ul>
+      </div>
+      <div class="value-card">
+        <h4 style="color:#6a3fa0;">Business <span style="color:var(--ink-muted); font-weight:400;">Planner</span></h4>
+        <ul>
+          <li>Structuring public/private project plans</li>
+          <li>Feasibility assessment &amp; proposal writing</li>
+          <li>Running the ASCA KOREA Forum</li>
+          <li>Designing short-term revenue strategy</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section class="roadmap-section">
+  <div class="section-pad">
+    <div class="section-number">◦ Roadmap</div>
+    <h2 class="display section-title">
+      2026<span style="color:var(--ink-muted);">–</span>2027<br/>
+      <em style="font-style:italic; color:var(--accent); font-family:'Fraunces';">Roadmap.</em>
+    </h2>
+
+    <div class="roadmap-grid">
+      <div class="roadmap-col">
+        <div class="roadmap-period" style="background:#0a2a7a;">2026<span>May–Jul</span></div>
+        <div class="roadmap-card"><span class="roadmap-dot" style="background:#0a2a7a;"></span>ASCA Biz Summit 2026</div>
+        <div class="roadmap-card"><span class="roadmap-dot" style="background:#0a2a7a;"></span>Official Korean-company agency</div>
+      </div>
+      <div class="roadmap-col">
+        <div class="roadmap-period" style="background:#1f57d8;">2026<span>Aug</span></div>
+        <div class="roadmap-card"><span class="roadmap-dot" style="background:#1f57d8;"></span>ASCA BizWeek Summit — Korean company matching</div>
+        <div class="roadmap-card"><span class="roadmap-dot" style="background:#1f57d8;"></span>ASCA 2026 BizWeek participation, official MOU in Kisumu, Kenya</div>
+      </div>
+      <div class="roadmap-col">
+        <div class="roadmap-period" style="background:#1f9e7a;">2026<span>Sep–Nov</span></div>
+        <div class="roadmap-card"><span class="roadmap-dot" style="background:#1f9e7a;"></span>Care platform monitoring</div>
+        <div class="roadmap-card"><span class="roadmap-dot" style="background:#1f9e7a;"></span>Care platform transitions to PPP; H2 ASCA business planning · ASCA KOREA FORUM formed</div>
+      </div>
+      <div class="roadmap-col">
+        <div class="roadmap-period" style="background:var(--accent);">2027<span>Mar</span></div>
+        <div class="roadmap-card"><span class="roadmap-dot" style="background:var(--accent);"></span>3 references secured <span style="color:var(--ink-muted); font-size:12px;">(ASCA · Care · Academy)</span></div>
+        <div class="roadmap-card"><span class="roadmap-dot" style="background:var(--accent);"></span>Elite senior finance premium academy launches</div>
+      </div>
+      <div class="roadmap-col">
+        <div class="roadmap-period" style="background:#6a3fa0;">2027<span>H1</span></div>
+        <div class="roadmap-card"><span class="roadmap-dot" style="background:#6a3fa0;"></span>ASCA New York, care platform PPP phase 2</div>
+        <div class="roadmap-card"><span class="roadmap-dot" style="background:#6a3fa0;"></span>ASCA-matched companies, Africa Korea Biz Summit</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EPILOGUE -->
+<section class="epilogue" id="contact-en">
+  <div class="epilogue-bg">
+    <svg viewBox="0 0 1400 600" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:100%;">
+      <g stroke="#1f57d8" fill="none" stroke-width="1" opacity="0.3">
+        <path d="M0,200 C 300,50 600,350 900,200 S 1400,50 1700,200"/>
+        <path d="M0,220 C 300,70 600,370 900,220 S 1400,70 1700,220"/>
+        <path d="M0,240 C 300,90 600,390 900,240 S 1400,90 1700,240"/>
+        <path d="M0,260 C 300,110 600,410 900,260 S 1400,110 1700,260"/>
+        <path d="M0,280 C 300,130 600,430 900,280 S 1400,130 1700,280"/>
+        <path d="M0,300 C 300,150 600,450 900,300 S 1400,150 1700,300"/>
+      </g>
+    </svg>
+  </div>
+  <div class="epilogue-inner">
+    <div class="section-number" style="justify-content:center; display:inline-flex;">06 / Epilogue</div>
+    <h2 class="epilogue-title">
+      Connecting intelligently, like a synapse —<br/>
+      toward a city where <em>no one is left behind.</em>
+    </h2>
+    <p class="epilogue-body">
+      Through living labs that share warm technology and civic wisdom, Urban Synapse builds an 
+      inclusive ecosystem of value, moving toward a sustainable, intelligent city of cooperation and care. 
+      We look forward to partners, local governments and citizens who want to build this together.
+    </p>
+    <a href="mailto:usp@urbansynapse.kr" class="cta-button">
+      Start a Project
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 9H16M16 9L10 3M16 9L10 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="display"><span class="accent">Urban</span> Synapse.</div>
+      <p>Through the warm connection of city, people and technology, we build AI-inclusive urban services for every generation.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <a href="mailto:usp@urbansynapse.kr">usp@urbansynapse.kr</a>
+      <p>82 · 02 · 3471 · 9588</p>
+      <a href="https://www.urbansynapse.kr" target="_blank">WWW.urbansynapse.kr</a>
+    </div>
+    <div class="footer-col">
+      <h5>Navigation</h5>
+      <a href="#brand-en">Brand</a>
+      <a href="#vision-en">Vision</a>
+      <a href="#values-en">Core Values</a>
+      <a href="#sectors-en">Business</a>
+      <a href="#team-en">Team</a>
+    </div>
+    <div class="footer-col">
+      <h5>Platform</h5>
+      <a href="#">ASCA KOREA Agency</a>
+      <a href="#">CARE Inclusive Platform</a>
+      <a href="#">Age Pride Academy</a>
+      <a href="#">Urban Innovation</a>
+      <a href="#">C.X Living Lab</a>
+      <p style="margin-top: 12px; color:var(--accent); font-weight:500;">ASCA KOREA</p>
+      <a href="mailto:ascakorea@urbansynapse.kr">ascakorea@urbansynapse.kr</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 URBAN SYNAPSE. All rights reserved.</div>
+    <div class="mono">Human-Centered AGI Urbanism · Seoul, Korea</div>
+  </div>
+</footer>
+
+
+</div>
+<script>
+  // Nav scroll state (applies to both language navs)
+  const navs = document.querySelectorAll('#site-ko nav, #site-en nav');
+  window.addEventListener('scroll', () => {
+    navs.forEach(nav => {
+      if (window.scrollY > 40) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+    });
+  });
+
+  // Reveal on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('section').forEach(s => {
+    s.classList.add('reveal');
+    observer.observe(s);
+  });
+
+  // Language toggle
+  function setSiteLang(lang) {
+    const ko = document.getElementById('site-ko');
+    const en = document.getElementById('site-en');
+    if (lang === 'en') {
+      ko.style.display = 'none';
+      en.style.display = 'block';
+      en.querySelectorAll('section').forEach(s => s.classList.add('in'));
+    } else {
+      en.style.display = 'none';
+      ko.style.display = 'block';
+      ko.querySelectorAll('section').forEach(s => s.classList.add('in'));
+    }
+    window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
+  }
+</script>
+
+</body>
+</html>
